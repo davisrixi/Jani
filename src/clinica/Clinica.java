@@ -26,10 +26,16 @@ public class Clinica {
     doctor1.agregarPaciente(paciente1);
     doctor1.agregarPaciente(paciente2);
     
-     
-    System.out.println(doctor1.listarPaciente(doctor1));
+    
+    Clinica clinica = new Clinica();
+    System.out.println(clinica.consulta(doctor1));
     
     
+    }
+    
+    public String consulta(Doctor doctor){
+        String mensaje = doctor.listarPaciente(doctor);
+        return mensaje;
     }
     
 }
